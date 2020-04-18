@@ -20,12 +20,12 @@ Após criado os primeiros arquivos, executei...
 
     rollup src/main.js -f cjs
 
-> "The -f option (short for --format) specifies what kind of bundle we're creating.
-> In this case, CommonJS (which will run in Node.js)."
+> The -f option (short for --format) specifies what kind of bundle we're creating.
+> In this case, CommonJS (which will run in Node.js).
 
 Nenhum arquivo foi criado/gerado.
 
-> "Because we didn't specify an output file, it will be printed straight to stdout:"
+> Because we didn't specify an output file, it will be printed straight to stdout:
 
     src/main.js → stdout...
     'use strict';
@@ -39,7 +39,7 @@ Nenhum arquivo foi criado/gerado.
     module.exports = main;
 
 
-You can save the bundle as a file like so:
+> You can save the bundle as a file like so:
 
     rollup src/main.js -o bundle.js -f cjs
 
@@ -55,5 +55,5 @@ Obtive como saída:
     > myBundle();
     'hello world!'
 
-Congratulations! You've created your first bundle with Rollup.
+> Congratulations! You've created your first bundle with Rollup.
 
