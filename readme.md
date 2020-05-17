@@ -41,19 +41,35 @@ Nenhum arquivo foi criado/gerado.
 
 > You can save the bundle as a file like so:
 
-    rollup src/main.js -o bundle.js -f cjs
+    rollup src/main.js -o dist/bundle.js -f cjs
 
 Obtive como saída:
 
-    src/main.js → bundle.js...
+    src/main.js → dist/bundle.js...
     created bundle.js in 42ms
-
-### Try running the code:
-
-    node
-    > var myBundle = require('./bundle.js');
-    > myBundle();
-    'hello world!'
 
 > Congratulations! You've created your first bundle with Rollup.
 
+
+### Try running the code:
+
+Testando no terminal iterativo: 
+
+    node
+    > var myBundle = require('./dist/bundle.js');
+    > myBundle();
+    'hello world!'
+
+Ou simplesmente...
+
+    node test/bundle.js
+
+
+## options.format
+
+- amd
+- cjs
+- esm
+- iief
+- umd
+- system
